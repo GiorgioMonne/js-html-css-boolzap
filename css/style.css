@@ -1,0 +1,239 @@
+/* ***COMMONS*** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ***HEADER*** */
+
+/* ***MAIN*** */
+
+main{
+    height: 100vh;   
+    background: linear-gradient(to bottom,
+           red 15%, blue 15% 100%); 
+    position: relative;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.container{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50% );
+    background-color: white;
+}
+
+.sinistro{
+    display:flex ;
+    width: 35%;
+    height: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.destra{
+    display: flex;
+    width: 65%;
+    height: 100%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registro{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:0 10px ;
+}
+
+.pulsanti i{
+    margin: 0 5px;
+    cursor: pointer;
+    color: grey;
+}
+
+.notifiche {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(103, 211, 175);
+}
+
+.loghetto {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.loghetto i{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 40px;
+    color: rgb(103, 211, 175);
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.link{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.search-bar{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightgrey; */
+}
+
+.input{
+    height: 88%;
+    width: 98%;
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid rgb(228, 228, 228);
+    /* background-color: lightpink; */
+}
+
+.input input{
+    height: 30px;
+    width: 400px;
+    margin: auto 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.input i{
+    margin: auto 5px;
+}
+
+/* ***USARE IL WRAP QUA*** */
+
+.utenti{
+    height: calc(100% - 140px);
+    /* background-color: lightpink; */
+}
+
+.box-utente{
+    height: 80px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+
+}
+
+.box-utente img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:0 10px ;
+}
+
+.utente-chat{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.logo-chat{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-chat img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:0 10px ;
+}
+
+.pulsanti-chat i{
+    margin: 0 5px;
+    cursor: pointer;
+    color: grey;
+}
+
+.link-due{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.link-due p{
+    font-weight: bold;
+}
+
+.link-due span{
+    font-size: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.chat{
+    height: calc(100% - 100px);
+    width: 100%;
+    background-image: url(../img/mine.jpg);
+}
+
+
+
+
+
+
+.input-mess{
+    height: 50px;
+    width: 100%;
+    background-color: lightsalmon;
+}
+
+/* ***FOOTER*** */
