@@ -152,7 +152,9 @@ main{
 /* ***USARE IL WRAP QUA*** */
 
 .utenti{
+    margin-top: 5px;
     height: calc(100% - 140px);
+    overflow-y: scroll;
     /* background-color: lightpink; */
 }
 
@@ -219,21 +221,43 @@ main{
     color: grey;
 }
 
+
+/* ***BELLO PIENO DOMANI*** */
+
 .chat{
     height: calc(100% - 100px);
     width: 100%;
     background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
 }
 
 
 
-
-
+/* ***BELLO PIENO DOMANI*** */
 
 .input-mess{
     height: 50px;
     width: 100%;
-    background-color: lightsalmon;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.input-mess i{
+    font-size: 20px;
+    margin: 0 15px;
+    color: gray;
+}
+
+.input-mess input{
+    height: 40px;
+    width: 700px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+
 
 /* ***FOOTER*** */
