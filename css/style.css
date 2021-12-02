@@ -272,8 +272,9 @@ main{
     max-width: 40%;
     min-width: 200px;
     border-radius: 10px;
-    padding: 10px;
-    margin: 10px ;
+    padding: 10px 10px 25px 10px;
+    margin: 10px;
+    position: relative;
 }
 
 .text{
@@ -291,12 +292,22 @@ main{
 .mess-text.my{
     background-color: greenyellow;
     margin-left: auto;
+    margin-bottom: 10px;
 }
 
 .mess-text.others{
     background-color: white;
 }
 
+.massage-date{
+    position: absolute;
+    font-size: 11px;
+    color: #888;
+    bottom: 3px;
+    right: 4px;
+    
+    
+}
 
 
 
