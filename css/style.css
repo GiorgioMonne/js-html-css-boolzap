@@ -12,7 +12,8 @@
 /* ***MAIN*** */
 
 main{
-    height: 100vh;   
+    height: 100vh;
+    width: 100vw;   
     background: linear-gradient(to bottom,
            red 15%, blue 15% 100%); 
     position: relative;
@@ -27,7 +28,7 @@ main{
 
 .container{
     height: 90%;
-    width: 80%;
+    width: 1200px;
     display: flex;
     position: absolute;
     left: 50%;
@@ -225,10 +226,10 @@ main{
 /* ***BELLO PIENO DOMANI*** */
 
 .chat{
-    height: calc(100% - 100px);
-    width: 100%;
+    flex-grow: 1;
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
+    padding: 30px 40px;
 }
 
 
@@ -257,6 +258,45 @@ main{
     border-radius: 3px;
     border: none;
 }
+
+.active{
+    background-color: lightgrey;
+}
+
+
+.message{
+    display: flex;  
+}
+
+.mess-text{
+    max-width: 40%;
+    min-width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px ;
+}
+
+.text{
+    max-width: 30%;
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+}
+
+.inizio{
+    margin: auto;
+    background-color: rgba(241, 241, 241, 0.483);
+}
+
+.mess-text.my{
+    background-color: greenyellow;
+    margin-left: auto;
+}
+
+.mess-text.others{
+    background-color: white;
+}
+
 
 
 

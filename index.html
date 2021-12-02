@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <div id="root">
+
     <!-- inizio header -->
     <header>
 
@@ -29,8 +31,8 @@
 
                     <div class="logo">
 
-                        <img src="img/avatar_io.jpg" alt="logo">
-                        <span>Nome Utente</span>
+                        <img :src="`img/avatar${user.avatar}.jpg`" alt="logo">
+                        <span>{{user.name}}</span>
 
                     </div>
 
@@ -72,35 +74,15 @@
 
                 </div>
 
-                <div class="utenti">
+                <div class="utenti" >
 
-                    <div class="box-utente">
+                    <div class="box-utente" v-for="contact in contacts">
 
-                        <img src="img/avatar_1.jpg" alt="">
-                        <span>Marco Rughelli</span>
+                        <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
+                        <span>{{contact.name}}</span>
 
                     </div>
 
-                    <div class="box-utente">
-
-                        <img src="img/avatar_2.jpg" alt="">
-                        <span>Aldo filippi</span>
-                        
-                    </div>
-
-                    <div class="box-utente">
-
-                        <img src="img/avatar_3.jpg" alt="">
-                        <span>Franco carta</span>
-                        
-                    </div>
-
-                    <div class="box-utente">
-
-                        <img src="img/avatar_4.jpg" alt="">
-                        <span>Paolo Rughelli</span>
-                        
-                    </div>
 
                 </div>
 
@@ -112,11 +94,12 @@
                     
                     <div class="logo-chat">
 
-                        <img src="img/avatar_io.jpg" alt="logo">
+                        <img :src="`img/avatar${user.avatar}.jpg`" alt="logo">
+                        
 
                         <div class="link-due">
 
-                            <p>Marco</p>
+                            <p>{{user.name}}</p>
                             <span>Ultimo accesso oggi alle</span>
 
                         </div>
@@ -135,7 +118,29 @@
 
                 <div class="chat">
 
-                    ***AGGIUNGERE I MESSAGGI DOMANI IN MODO DINAMICO***
+                    <div class="messege">
+
+                        <div class="text inizio">
+                            <span>Chat iniziata il 12/04/2016</span>
+                        </div>
+
+                    </div>
+
+                    <div class="massage">
+
+                        <div class="mess-text my">
+                            Hai comprato il nuovo pc della apple?
+                        </div>
+
+                    </div>
+
+                    <div class="massage">
+
+                        <div class="mess-text others">
+                            no
+                        </div>
+
+                    </div> 
 
                 </div>
 
@@ -159,6 +164,7 @@
 
     </footer>
     <!-- fine footer -->
+</div>
 
 
      <!-- development version, includes helpful console warnings -->
