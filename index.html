@@ -127,9 +127,9 @@
 
                     </div> -->
 
-                    <div class="message" v-for="(mess,index) in contacts[currentContact].messages">
+                    <div class="message" v-for="(mess,index) in contacts[currentContact].messages" @click="elimina(index)">
 
-                        <div class="mess-text" :class="mess.status">
+                        <div class="mess-text" :class="mess.status" >
         
                             <div class="testo-messaggio">{{mess.message}}</div>
                             <div class="message-date">{{mess.date}}</div>

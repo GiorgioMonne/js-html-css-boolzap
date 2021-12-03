@@ -133,7 +133,11 @@ const app = new Vue ({
                 this.nuovoMessaggio ="";
             }
         },
- 
+
+        elimina: function(i){
+            this.contacts[this.currentContact].messages.splice(i,1);
+        },
+
         cercaUtente: function(){
             
             for(let i=0;i<this.contacts.length;i++){
