@@ -282,6 +282,7 @@ main{
     font-size: 20px;
     margin: 0 15px;
     color: gray;
+    cursor: pointer;
 }
 
 .input-mess input{
@@ -290,6 +291,7 @@ main{
     padding: 0 10px;
     border-radius: 3px;
     border: none;
+    
 }
 
 .active{
