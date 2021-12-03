@@ -144,7 +144,7 @@
                 <div class="input-mess">
 
                     <i class="far fa-smile"></i>
-                    <input type="text" v-model="nuovoMessaggio" placeholder="Scrivi un messaggio" @click="">
+                    <input type="text" v-model="nuovoMessaggio" placeholder="Scrivi un messaggio" @keypress.enter="addMessage()">
                     <i class="fas fa-microphone"></i>
 
                 </div>

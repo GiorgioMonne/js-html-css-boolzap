@@ -113,6 +113,15 @@ const app = new Vue ({
     methods:{
         cambioContatto: function(index){
             this.currentContact = index;
+        },
+        addMessage: function(nuovoMessaggio){
+            
+            const nuovoMess = {
+                date: '10/01/2020 15:30:55',
+                message: this.nuovoMessaggio,
+                status: 'sent'
+            }
+            this.contacts[currentContact].messages.push(nuovoMess);
         }
     }
 
