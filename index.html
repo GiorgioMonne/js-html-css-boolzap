@@ -126,7 +126,7 @@
 
                     </div> -->
 
-                    <div class="message" v-for="mess in contacts[currentContact].messages">
+                    <div class="message" v-for="(mess,index) in contacts[currentContact].messages">
 
                         <div class="mess-text" :class="mess.status">
         
