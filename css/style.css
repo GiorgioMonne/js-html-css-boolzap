@@ -88,7 +88,7 @@ main{
 
 .notifiche {
     height: 70px;
-    width: 100%;
+    width:100%;
     background-color: rgb(103, 211, 175);
 }
 
@@ -164,6 +164,7 @@ main{
     border-bottom: 1px solid lightgray;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 }
 
@@ -233,6 +234,38 @@ main{
 }
 
 
+.message{
+    display: flex;
+    margin: 10px 0;
+    /* background-color: aquamarine; */
+}
+
+.mess-text{
+    max-width: 40%;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: blueviolet; */
+   
+}
+
+.sent{
+    margin-left: auto;
+    background-color: greenyellow;
+}
+
+.received{
+    background-color: white;
+}
+
+.message-date{
+    /* position: absolute; */
+    font-size: 10px;
+    color: grey;
+    margin-top: 10px;
+    text-align: right;
+}
+
 
 /* ***BELLO PIENO DOMANI*** */
 
@@ -264,50 +297,7 @@ main{
 }
 
 
-.message{
-    display: flex;  
-}
 
-.mess-text{
-    max-width: 40%;
-    min-width: 200px;
-    border-radius: 10px;
-    padding: 10px 10px 25px 10px;
-    margin: 10px;
-    position: relative;
-}
-
-.text{
-    max-width: 30%;
-    border-radius: 10px;
-    padding:10px;
-    text-align: center;
-}
-
-.inizio{
-    margin: auto;
-    background-color: rgba(241, 241, 241, 0.483);
-}
-
-.mess-text.my{
-    background-color: greenyellow;
-    margin-left: auto;
-    margin-bottom: 10px;
-}
-
-.mess-text.others{
-    background-color: white;
-}
-
-.massage-date{
-    position: absolute;
-    font-size: 11px;
-    color: #888;
-    bottom: 3px;
-    right: 4px;
-    
-    
-}
 
 
 

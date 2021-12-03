@@ -76,7 +76,7 @@
 
                 <div class="utenti" >
 
-                    <div class="box-utente" v-for="contact in contacts">
+                    <div class="box-utente" v-for="(contact,index) in contacts" @click="cambioContatto(index)" :class="index == currentContact ? 'active' : null">
 
                         <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
                         <span>{{contact.name}}</span>
@@ -94,12 +94,12 @@
                     
                     <div class="logo-chat">
 
-                        <img :src="`img/avatar${user.avatar}.jpg`" alt="logo">
+                        <img :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="logo">
                         
 
                         <div class="link-due">
 
-                            <p>{{user.name}}</p>
+                            <p>{{contacts[currentContact].name}}</p>
                             <span>Ultimo accesso oggi alle</span>
 
                         </div>
@@ -118,40 +118,33 @@
 
                 <div class="chat">
 
-                    <div class="messege">
+                    <!-- <div class="messege">
 
                         <div class="text inizio">
                             <span>Chat iniziata il 12/04/2016</span>
                         </div>
 
-                    </div>
+                    </div> -->
 
-                    <div class="massage">
+                    <div class="message" v-for="mess in contacts[currentContact].messages">
 
-                        <div class="mess-text my">
-                            Hai comprato il nuovo pc della apple?
-                            <span  class="massage-date">10/01/2020 15:30:55</span>
+                        <div class="mess-text" :class="mess.status">
+        
+                            <div class="testo-messaggio">{{mess.message}}</div>
+                            <div class="message-date">{{mess.date}}</div>
+
                         </div>
 
                     </div>
 
-                    <div class="massage">
 
-                        <div class="mess-text others">
-                            no
-                            <span class="massage-date">10/01/2020 15:30:55
-                                
-                            </span>
-                        </div>
-
-                    </div> 
 
                 </div>
 
                 <div class="input-mess">
 
                     <i class="far fa-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio" @click="">
+                    <input type="text" v-model="nuovoMessaggio" placeholder="Scrivi un messaggio" @click="">
                     <i class="fas fa-microphone"></i>
 
                 </div>

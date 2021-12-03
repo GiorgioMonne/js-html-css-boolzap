@@ -107,9 +107,13 @@ const app = new Vue ({
         name:'Giorgio',
         avatar:'_2'
     },
+    currentContact: 0,
+    nuovoMessaggio: ""
+    },
     methods:{
-        
+        cambioContatto: function(index){
+            this.currentContact = index;
+        }
     }
-}
 
 });
