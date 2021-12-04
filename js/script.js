@@ -122,16 +122,23 @@ const app = new Vue ({
                     date: '10/01/2020 15:30:55',
                 message: this.nuovoMessaggio,
                 status: 'sent'
-                },
-                {
-                    date: '10/01/2020 15:30:55',
-                    message: "La sardegna è l'isola più bella del mondo",
-                    status: 'received'
-                }
-                );
+                });
 
                 this.nuovoMessaggio ="";
+
+                setTimeout(() =>{
+                    this.Contromessaggio(this.currentContact);
+                },1000);
             }
+        },
+
+        Contromessaggio: function(){
+            this.contacts[this.currentContact].messages.push(
+                {
+                date: '10/01/2020 15:30:55',
+                message: "La sardegna è l'isola più bella del mondo",
+                status: 'received'
+            })
         },
 
         elimina: function(i){
